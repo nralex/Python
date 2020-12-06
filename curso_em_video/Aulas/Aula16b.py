@@ -1,0 +1,16 @@
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = a + b
+d = b + a
+print(a)
+print(b)
+print(c)
+print(sorted(c))
+print(d)
+print(c == d)
+print(c.count(5))
+print(c.count(4))
+print(c.count(9))
+print(c.index(8))
+print(c.index(2))
+print(c.index(2,1))

@@ -1,0 +1,10 @@
+#Exercício de objetos primitivos e identificação
+algo = input('Digite algo: ')
+print('O tipo desse valor é ' , type(algo))
+print('É composto somente de espaço? ', algo.isspace())
+print('É um número? ' , algo.isnumeric())
+print('É alfabético? ' , algo.isalpha())
+print('É alfanumérico? ' , algo.isalnum())
+print('Está em maiúsculas? ' , algo.isupper())
+print('Está em minúsculas? ' , algo.islower())
+print('está captalizada? ' , algo.istitle())
