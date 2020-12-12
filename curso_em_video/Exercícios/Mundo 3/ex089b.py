@@ -1,4 +1,3 @@
-from time import sleep
 lista = []
 while True:
     nome = str(input('Nome: ')).title().strip()
@@ -16,9 +15,7 @@ print(f'{"N°":3}', f'{"NOME":40}', f'{"MÉDIA":5}')
 print('-' * 50)
 listarNome = 0
 for l in range(0,len(lista)):
-    print(f'{f"{l}":4}', end='')
-    print(f'{lista[l][0]:40}', end='')
-    print(f'{lista[l][2]:>5.1f}')
+    print(f'{l:<3}', f'{lista[l][0]:<40}', f'{lista[l][2]:>5.1f}')
 print('-' * 50)
 while True:
     qualAluno = int(input('Mostrar a nota de qual aluno? (999 interrompe): '))
@@ -27,5 +24,4 @@ while True:
         break
     print(f'As notas de {lista[qualAluno][0]} são {lista[qualAluno][1]}')
     print('-' * 50)
-sleep(1)
 print(f'{"<<< VOLTE SEMPRE >>>":^50}')
