@@ -7,6 +7,9 @@ if aluno['média'] < 7:
     aluno['situação'] = 'Reprovado'
 else:
     aluno['situação'] = 'Aprovado'
-print(f'Nome é igual a {aluno["nome"]}')
+print('-' * 50)
+for k, v in aluno.items():
+    print(f'    -   {k} é igual a {v}.')
+'''print(f'Nome é igual a {aluno["nome"]}')
 print(f'Média é igual a {aluno["média"]}')
-print(f'Situação é igual a {aluno["situação"]}')
+print(f'Situação é igual a {aluno["situação"]}')'''
