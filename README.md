@@ -2,4 +2,4 @@
 
 <p>Repositório para guardar estudos de Python</p>
 <p>Por hora focado nas aulas do curso em vídeo</p>
-<i>Não está fácil, mas sigo tentando</i>
+<i>Legal agora é def</i>
