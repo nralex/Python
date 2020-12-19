@@ -3,10 +3,8 @@ Crie um programa que tenha uma função chamada voto() que vai receber como par�
 nascimento de uma pessoa, retornando um valor literal indicando se uma pessoa tem voto NEGADO,
 OPCIONAL ou OBRIGATÓRIO nas eleições.
 """
-from datetime import date
-
-
 def voto(nascimento):
+    from datetime import date
     ano = date.today().year
     idade = ano - nascimento
     print(f'Com {idade} anos: ', end='')
