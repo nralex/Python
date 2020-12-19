@@ -5,12 +5,17 @@ nome de um jogador e quantos gols ele marcou.
 O programa deverá ser capaz de mostrar a ficha do jogador, mesmo que algum dado não tenha sido
 informado corretamente.
 """
-
-def ficha(nome='<DESCONHECIDO>', gols=0):
-    print('-' * 30)
-    print(f'O jogador {nome} fez {gols} gols no campeonato.')
+def ficha(nomeJogador='<DESCONHECIDO>', golsMarcados=0):
+    print(f'O jogador {nomeJogador} fez {golsMarcados} gols no campeonato.')
 
 
-nomeJogador = str(input('Nome do Jogador: '))
-golsJogador = int(input('Número de Gols: '))
-ficha(nomeJogador, golsJogador)
+nome = str(input('Nome do Jogador: ')).upper()
+gols = str(input('Numero de Gols: '))
+if gols.isnumeric():
+    gols = int(gols)
+else:
+    gols = 0
+if nome.strip() == '':
+    ficha(golsMarcados=gols)
+else:
+    ficha(nome, gols)
