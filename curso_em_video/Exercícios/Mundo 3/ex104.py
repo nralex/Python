@@ -4,3 +4,14 @@ input() do Python, só que fazendo a validação para aceitar apenas um valor nu
 
 Ex: n = leiaInt('Digite um nº: ')
 """
+def leiaInt(mensagem=''):
+    print('\n', '-' * 30, sep='')
+    while True:
+        número = input(mensagem).strip()
+        if número.replace('-', '', 1).isdigit(): # isnumeric()
+            return int(número)
+        print('ERRO! Digite um número inteiro válido!')
+
+n = leiaInt('Digite um n°: ')
+print(f'Você acabou de digitar o número {n}')
+
