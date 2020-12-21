@@ -10,7 +10,7 @@ def leiaInt(mensagem=''):
         número = input(mensagem).strip()
         if número.replace('-', '', 1).isdigit(): # isnumeric()
             return int(número)
-        print('ERRO! Digite um número inteiro válido!')
+        print('\033[0;31mERRO! Digite um número inteiro válido!\033[m')
 
 n = leiaInt('Digite um n°: ')
 print(f'Você acabou de digitar o número {n}')
