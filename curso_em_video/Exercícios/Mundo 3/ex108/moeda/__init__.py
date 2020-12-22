@@ -13,3 +13,7 @@ def aumentar(n, porcentagem):
 
 def diminuir(n, porcentagem):
     return n * (1 - (porcentagem / 100))
+
+
+def moeda(n):
+    return f'R${n:.2f}'
