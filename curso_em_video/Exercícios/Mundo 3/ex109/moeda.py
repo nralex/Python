@@ -3,17 +3,17 @@ def metade(n, formatado=False):
     return valor if formatado is False else moeda(n)
 
 
-def dobro(n, formatado):
+def dobro(n, formatado=False):
     valor = n * 2
     return valor if formatado is False else moeda(n)
 
 
-def aumentar(n, porcentagem, formatado):
+def aumentar(n, porcentagem, formatado=False):
     valor = n * (1 + (porcentagem / 100)) 
     return valor if formatado is False else moeda(n)
 
 
-def diminuir(n, porcentagem, formatado):
+def diminuir(n, porcentagem, formatado=False):
     valor = n * (1 - (porcentagem / 100)) 
     return valor if formatado is False else moeda(n)
 
