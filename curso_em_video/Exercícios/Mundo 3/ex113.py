@@ -3,13 +3,18 @@ Reescreva a função leiaInt() que fizemos no desafio 104, incluindo agora a pos
 digitação de um número de tipo inválido.
 Aproveite e crie também uma função leiaFloat() com a mesma funcionalidade.
 """
+# Não tratei uma excessão específica, todas serão executadas por igual.
 
 def leiaInt(menságem):
     while True:
         try:
             a = int(input(menságem))
-        except:
+        except(ValueError, TypeError):
             print('\033[0;31mERRO! Digite um valor inteiro válido.\033[m')
+            continue
+        except(KeyboardInterrupt):
+            print('\033[0;31mUsuário preferiu não digitar esse número.\033[m')
+            continue
         else:
             return a
 
@@ -19,8 +24,12 @@ def leiaFloat(menságem):
     while True:
         try:
             a = float(input(menságem))
-        except:
-            print('\033[0;31mERRO! Digite um valor real válido.\033[m')
+        except(ValueError, TypeError):
+            print('\033[0;31mERRO! Digite um valor inteiro válido.\033[m')
+            continue
+        except(KeyboardInterrupt):
+            print('\033[0;31mUsuário preferiu não digitar esse número.\033[m')
+            continue
         else:
             return a
 
