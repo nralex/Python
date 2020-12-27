@@ -1,5 +1,8 @@
 {
     "git.ignoreLimitWarning": true,
     "code-runner.runInTerminal": true,
-    "code-runner.saveAllFilesBeforeRun": true
+    "code-runner.saveAllFilesBeforeRun": true,
+    "cSpell.words": [
+        "sleep"
+    ]
 }
