@@ -1,5 +1,0 @@
-Jose;35
-Alex;35
-Bernardo;4
-Adabogerto;38
-Germiniana;21
