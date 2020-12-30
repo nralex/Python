@@ -3,6 +3,7 @@ __pycache__/
 *.py[bacalhau]
 *$py.class
 .vscode
+tempCodeRunnerFile.py
 
 # Extensões C
 *.so
