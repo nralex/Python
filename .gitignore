@@ -1,0 +1,138 @@
+# Arquivos byte-compilados / otimizados / DLL
+__pycache__/
+*.py[bacalhau]
+*$py.class
+
+# Extensões C
+*.so
+
+# Distribuição / embalagem
+. Python
+Construir/
+desenvolver ovos/
+Dist/
+Downloads/
+ovos/
+.ovos/
+Lib/
+lib64/
+Partes/
+sdist/
+Var/
+Rodas/
+compartilhar/python-rodas/
+*.egg-info/
+.instalado.cfg
+*.ovo
+Manifesto
+
+# PyInstaller
+# Normalmente esses arquivos são escritos por um script python de um modelo
+# antes de PyInstaller construir o exe, de modo a injetar data/outras informações nele.
+*.manifest
+*.spec
+
+# Logs do instalador
+pip-log.txt
+pip-delete-este-diretório.txt
+
+# Relatórios de teste/cobertura da unidade
+htmlcov/
+.tox/
+.nox/
+.cobertura
+.cobertura.*
+.cache
+testes de nariz.xml
+cobertura.xml
+*.cover
+*.py, capa
+.hipótese/
+.pytest_cache/
+Cobrir/
+
+# Traduções
+*.mo
+*.pot
+
+# Coisa django:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Coisas de frasco:
+Instância/
+.webassets-cache
+
+# Coisas raspadas:
+.scrapy
+
+# Documentação de esfinge
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+Alvo/
+
+# Caderno Jupyter
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# Para uma biblioteca ou pacote, você pode querer ignorar esses arquivos, uma vez que o código é
+# destinado a funcionar em vários ambientes; caso contrário, verifique-os:
+# .python-versão
+
+# pipenv
+# De acordo com pypa/pipenv#598, recomenda-se incluir Pipfile.lock no controle da versão.
+# No entanto, em caso de colaboração, se tiver dependências ou dependências específicas da plataforma
+# sem suporte multiplataforma, o pipenv pode instalar dependências que não funcionam ou não
+# instalar todas as dependências necessárias.
+#Pipfile.lock
+
+# PEP 582; usado por exemplo github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Material de aipo
+aipobeat-cronograma
+aipobeat.pid
+
+# Arquivos analisados SageMath
+*sage.py
+
+# Ambientes
+.env
+.venv
+Env/
+venv/
+Env/
+env.bak/
+venv.bak/
+
+# Configurações do projeto Spyder
+.spyderproject
+.spyproject
+
+# Configurações do projeto corda
+.ropeproject
+
+# documentação mkdocs
+/Site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Verificador tipo pira
+.pira/
+
+# analisador tipo estático pytype
+.pytype/
+
+# Símbolos de depuração de Cython
+cython_debug/
