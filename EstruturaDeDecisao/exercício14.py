@@ -11,7 +11,7 @@
 # o conceito for A, B ou C ou “REPROVADO” se o conceito for D ou E.
 notas = []
 for c in range(1, 3):
-    nota = str(input(f'Digite a {c}ª nota: ')).replace(',', '.')
+    nota = str(input(f'Digite a {c}ª nota:[x,x] ')).replace(',', '.')
     notas.append(float(nota))
 media = sum(notas) / len(notas)
 if 10 >= media > 9:
