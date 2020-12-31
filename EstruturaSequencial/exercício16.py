@@ -4,9 +4,9 @@
 # 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta 
 # a serem compradas e o preço total.
 metros = float(input('Informe a área ser pintada: [m²] '))
-número_de_latas = metros / 54
-if número_de_latas != int(número_de_latas):
-    nl = número_de_latas.__trunc__() + 1
-    print(f'Para pintar {metros} m² será necessária a compra de {nl} lata(s) de tinta.\nAo custo de R${nl * 80:.2f}')
+nl = metros / (3 * 18)
+print(f'Para pintar {metros} m² será necessária a compra de:')
+if nl == int(nl):
+    print(f'{int(nl)} lata(s) de tinta.\nAo custo de R${int(nl) * 80:.2f}')
 else:
-    print(f'Para pintar {metros} m² será necessária a compra de {número_de_latas} lata(s) de tinta.\nAo custo de R${número_de_latas * 80:.2f}')
+    print(f'{int(nl) + 1} lata(s) de tinta.\nAo custo de R${(int(nl) + 1) * 80:.2f}')
