@@ -2,6 +2,7 @@
 __pycache__/
 *.py[bacalhau]
 *$py.class
+# Incluido por mim
 .vscode
 tempCodeRunnerFile.py
 
