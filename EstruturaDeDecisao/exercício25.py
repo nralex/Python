@@ -8,6 +8,7 @@
 # Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", 
 # entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
 investigação = 0
+# Solicita a resposta das perguntas, obrigando a ter sempre uma resposta válida, e soma 1 em investigação para cada resposta sim.
 while True:
     telefonou = str(input('Telefonou para a vítima? [S/N] ')).strip().upper()[0]
     if telefonou in 'SN':
@@ -15,6 +16,7 @@ while True:
             investigação += 1
         break
     print('\033[31mInforme uma opção válida!\033[m')
+
 while True:
     esteve = str(input('Esteve no local do crime? [S/N] ')).strip().upper()[0]
     if esteve in 'SN':
@@ -22,6 +24,7 @@ while True:
             investigação += 1
         break
     print('\033[31mInforme uma opção válida!\033[m')
+
 while True:
     mora = str(input('Mora perto da vítima? [S/N] ')).strip().upper()[0]
     if mora in 'SN':
@@ -29,6 +32,7 @@ while True:
             investigação += 1
         break
     print('\033[31mInforme uma opção válida!\033[m')
+
 while True:
     devia = str(input('Devia para a vítima? [S/N] ')).strip().upper()[0]
     if devia in 'SN':
@@ -36,6 +40,7 @@ while True:
             investigação += 1
         break
     print('\033[31mInforme uma opção válida!\033[m')
+
 while True:
     trabalhou = str(input('Já trabalhou com a vítima? [S/N] ')).strip().upper()[0]
     if trabalhou in 'SN':
@@ -43,6 +48,7 @@ while True:
             investigação += 1
         break
     print('\033[31mInforme uma opção válida!\033[m')
+# Verifica a situação do investigada como solicita o enunciado
 if investigação < 2:
     print('Inocente')
 if investigação == 2:
