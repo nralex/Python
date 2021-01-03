@@ -10,14 +10,10 @@
 #   *   O total de votos nulos;                                                             #
 #   *   O total de votos em branco;                                                         #
 #   *   A percentagem de votos nulos sobre o total de votos;                                #
-# A percentagem de votos em branco sobre o total de votos.                                  #
+#   *   A percentagem de votos em branco sobre o total de votos.                            #
 # Para finalizar o conjunto de votos tem-se o valor zero.                                   #
 #############################################################################################
-candidatos = {
-    1: 'Helena',
-    2: 'Alice',
-    3: 'Miguel', 
-    4: 'Arthur'}
+candidatos = {1: 'Helena', 2: 'Alice', 3: 'Miguel', 4: 'Arthur'}
 v1 = v2 = v3 = v4 = vn = vb = total = 1
 votos = {'Branco': 0, 'Nulo': 0}
 while True:
