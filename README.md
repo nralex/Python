@@ -3,4 +3,5 @@
 <h3><a href="https://wiki.python.org.br/ListaDeExercicios">Lista de Exercícios</a></h3>
     <li><a href="https://wiki.python.org.br/EstruturaSequencial">Estrutura Sequencial</a>  &#x2705; </li>
     <li><a href="https://wiki.python.org.br/EstruturaDeDecisao"> Estrutura de Decisão</a> &#x2705; </li>
-    <li><a href="https://wiki.python.org.br/EstruturaDeRepeticao"> Estrutura de Repetição</a></li>
+    <li><a href="https://wiki.python.org.br/EstruturaDeRepeticao"> Estrutura de Repetição</a> &#x2705; </li>
+    <li><a href="https://wiki.python.org.br/ExerciciosListas"> Exercícios com Listas</a></li>
