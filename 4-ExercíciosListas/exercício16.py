@@ -17,3 +17,24 @@
 # Desafio: Crie ma fórmula para chegar na posição da lista a partir do salário, sem fazer#
 # vários ifs aninhados.                                                                  #
 ##########################################################################################
+
+# Simplesmente não entendi O enunciado.
+# Créditos a https://github.com/karenyov
+
+vendedores = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+for i in range(0, len(vendedores)):
+    venda = float(input('Digite o valor das vendas: '))
+    salario = ((venda * 9)/ 100) + 200
+
+    indice = int(salario / 100) - 1
+    if indice > 9:
+        indice = 9
+    else:
+        indice = 1
+
+    vendedores[indice - 1] += 1
+
+for i in range(0, 9):
+    print ('%d - %d : %d' % (i * 100 + 200, (i + 1) * 100 + 199, vendedores[i]))
+
