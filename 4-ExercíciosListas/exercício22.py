@@ -12,14 +12,31 @@
 #       Uma identificação igual a zero encerra o programa.                                                          #
 # Ao final o programa deverá emitir o seguinte relatório:                                                           #
 #####################################################################################################################
+identificação = []
+situação = []
+defeito = ['necessita da esfera', 'necessita de limpeza', 'necessita troca do cabo ou conector', 'quebrado ou inutilizado']
+contador = 1
+while True:
+    código = int(input(f'{contador}° N° de identificação: [0 para sair] '))
+    if código == 0:
+        break
+    elif código not in identificação:
+        contador += 1 # Incluído apenas para ajudar na formatação da menságem de entrada.
+        identificação.append(código)
+        for i, v in enumerate(defeito):
+            print(f'[{i + 1}] - {v} ')
+        while True:
+            estado =int(input('Informe o estado o item: '))
+            if 1 <= estado <= len(defeito):
+                situação.append(estado)
+                break
+            else:
+                print('\033[31mInforme uma opção válida\033[m')
+    else:
+        print('\033[31mCódigo já informado!\033[m')
+print()
+print(f'Quantidade de mouses: {len(identificação)}\n') # poderia ter usado o comprimento de situação ou o contador.
+print(f'{"Situação":40} {"Quantidade"} {"Percentual":>12}')
+for i, v in enumerate(defeito):
+     print(f'{i + 1}- {v:37} {situação.count(i + 1):>10}   {((situação.count(i + 1)) / len(situação)) * 100:>10}%')
 
-
-'''
-Quantidade de mouses: 100
-
-Situação                        Quantidade              Percentual
-1- necessita da esfera                  40                     40%
-2- necessita de limpeza                 30                     30%
-3- necessita troca do cabo ou conector  15                     15%
-4- quebrado ou inutilizado              15                     15%
-'''
