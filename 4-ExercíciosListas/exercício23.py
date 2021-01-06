@@ -22,7 +22,6 @@ ACME Inc.               Uso do espaço em disco pelos usuários
 Nr.  Usuário        Espaço utilizado     % do uso\n''')
 for i, v in enumerate(linhas):
     print(f'{i+1:<5}{v[0]:15}{v[1]:13.2f} MB {(v[1] / total) * 100:>11.2f}%')
-
 print(f'\nEspaço total ocupado: {total:.2f} MB')
 print(f'Espaço médio ocupado: {total/len(linhas):.2f} MB\n')
 
