@@ -5,3 +5,28 @@
 # este é seu "Ponto". Seu objetivo agora é continuar jogando os dados até tirar este número novamente. Você perde,  #
 # no entanto, se tirar um 7 antes de tirar este Ponto novamente.                                                    #
 #####################################################################################################################
+def craps():
+    from random import randint
+    from time import sleep
+    dado = randint(2, 12)
+    print(dado)
+    sleep(1)
+    if dado == 7 or dado == 11:
+        print('Você um natural e ganhou')
+    elif dado == 2 or dado == 3 or dado == 12:
+        print('Craps e você perdeu')
+    elif dado == 4 or dado == 5 or dado == 6 or dado == 8 or dado == 9 or dado == 10:
+        ponto = dado
+        while True:
+            sleep(1)
+            p = randint(2, 12)
+            print(p)
+            if p == ponto:
+                print('Você ganhou!')
+                break
+            elif p == 7:
+                print('Você perdeu!')
+                break
+
+
+craps()
