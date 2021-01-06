@@ -21,25 +21,26 @@
 # A tela abaixo é um exemplo de execução do programa, apenas para fins ilustrativos. Os valores podem mudar a cada  #
 # execução do programa.                                                                                             #
 #####################################################################################################################
-
-'''Projeção de Gastos com Abono
-   ============================ 
- 
-Salário: 1000
-Salário: 300
-Salário: 500
-Salário: 100
-Salário: 4500
-Salário: 0
- 
-Salário    - Abono     
-R$ 1000.00 - R$  200.00
-R$  300.00 - R$  100.00
-R$  500.00 - R$  100.00
-R$  100.00 - R$  100.00
-R$ 4500.00 - R$  900.00
- 
-Foram processados 5 colaboradores
-Total gasto com abonos: R$ 1400.00
-Valor mínimo pago a 3 colaboradores
-Maior valor de abono pago: R$ 900.00'''
+print('Projeção de Gastos com Abono')
+print('=' * 28)
+salários = []
+abonos = []
+while True:
+   salário = float(input('Salário: '))
+   if salário == 0:
+      break
+   salários.append(salário)
+print()
+print(f'{"Salário":10}  - {"Abono":10}')
+for c, v in enumerate(salários):
+   if v * 0.2 >=100:
+      print(f'R$ {v:8.2f} - R$ {v * 0.2:5.2f} ')
+      abonos.append(v * 0.2)
+   else:
+      print(f'R$ {v:8.2f} - R$ 100.00 ')
+      abonos.append(100)
+print()
+print(f'Foram processados {len(salários)} colaboradores')
+print(f'Total gasto com abonos: R$ {sum(abonos):.2f} ')
+print(f'Valor mínimo pago a {abonos.count(100)} colaboradores')
+print(f'Maior valor de abono pago: R$ {max(abonos):.2f}')
