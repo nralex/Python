@@ -27,7 +27,7 @@ while True:
         h = int(input('Digite as horas para conversão: '))
         m = int(input('Digite os minutos para conversão: '))
         print(converteHora(h, m))
-        pergunta = str(input('Deseja continuar? [S para SIM ou qualquer outro carácter para encerrar] ')).upper().strip()[0]
+        pergunta = str(input('Deseja continuar? [N para encerrar] ')).upper().strip()[0]
         if pergunta == 'N':
             print('FIM')
             break
