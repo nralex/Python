@@ -8,7 +8,8 @@
 def embaralhador(palavra):
     from random import sample
     a = sample(palavra.upper(), len(palavra))
-    for c, i in enumerate(a):
-        print(i, end='')
+    for c in range(0, len(a)):
+        print(a[c], end='')
+
 
 embaralhador(str(input('Digite uma palavra: ')))
