@@ -14,3 +14,16 @@
 #       Digite uma letra: S                                                                                         #
 #       -> Você errou pela 2ª vez. Tente de novo!                                                                   #
 #####################################################################################################################
+'''
+from random import randint
+arquivo = open('6-ExerciciosComStrings\\Palavras.txt', 'r')    # Abre o arquivo 
+palavras = arquivo.readlines() # Lê o arquivo
+palavra = palavras[randint(0, len(palavras) - 1)].replace('\n', '').upper() # Guarda uma palavra de forma randômica em caixa alta e  sem quebra de linha.
+print(palavra)
+'''
+palavra = 'PATO'
+letra = 'A'
+vazio = '__ ' * len(palavra)
+
+if letra in palavra:
+    print(vazio)
