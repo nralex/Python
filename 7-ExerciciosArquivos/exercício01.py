@@ -23,6 +23,12 @@ for c in range(len(endereços)): #Verifica os IPs guardados na variável endere�
         válido.append(endereços[c]) # Guarda os IPs válidos na lista válido.
     else:
         inválido.append(endereços[c]) # Guarda os IPs inválidos na lista inválido.
-print(válido)
-print(inválido)
 
+relatório = open(r'7-ExerciciosArquivos\RelatórioDeIps.txt', 'w', encoding='utf-8') #Abre, ou cria o arquivo para escrita, coloquei utf-8 para escrever todos os caracteres normalmente.
+relatório.write('Endereços de IP válidos:\n')
+for i, v in enumerate(válido):
+    relatório.write(f'{v}\n')
+relatório.write('\nEndereços de IP inválidos:\n')
+for i, v in enumerate(inválido):
+    relatório.write(f'{v}\n')
+relatório.close()
