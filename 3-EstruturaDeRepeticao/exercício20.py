@@ -8,7 +8,7 @@ while True:
         if 16 > fatorial > 0:
             break
         else:
-            print('\033[31mInforme um números inteiros positivo e menore que 16\033[m')
+            print('\033[31mInforme um números inteiros positivo e menor que 16\033[m')
     fat = 1
     for c in range((fatorial), 0, -1):
         fat *= c
